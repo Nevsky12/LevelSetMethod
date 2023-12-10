@@ -1,0 +1,19 @@
+EXE_INC = \
+    -I$(LIB_SRC)/OpenFOAM/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/surfMesh/lnInclude \
+    -I$(LIB_SRC)/triSurface/lnInclude \
+    -I$(LIB_SRC)/sampling/lnInclude \
+    -I$(LIB_SRC)/parallel/distributed/lnInclude \
+    -I../construction \
+    -I../calculus \
+    -I../utils
+
+EXE_LIBS = \
+    -lfiniteVolume \
+    -lmeshTools \
+    -ltriSurface \
+    -lsampling \
+    -lsurfMesh \
+    -ldistributed \ 
